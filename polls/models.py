@@ -4,7 +4,7 @@ from django.db import models
 # Create your models here.
 class Quesetion(models.Model):
     question_text = models.CharField(max_length=200)
-    pub_date = models.DecimalField('date published')
+    pub_date = models.DateTimeField('date published')
 
 
 class Choice(models.Model):
